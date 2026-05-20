@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Appoint Funnels</title>
+    <meta name="description" content="Book a free consultation and get a custom lead generation strategy for your business.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <style>
+        body { padding-top: 140px; } /* To avoid overlap with fixed navbar */
+        .contact-form-section { min-height: 80vh; display: flex; align-items: center; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" style="display:flex; align-items:center; gap:12px;">
+                    <img src="images/Untitled%20design.png" alt="Appoint Funnels Logo" id="brand-logo">
+                    <span>Appoint Funnels</span>
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <div class="dropdown">
+                    <a href="index.html#services" style="display: flex; align-items: center; gap: 4px;">Services <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                    <div class="dropdown-menu">
+                        <a href="index.html#services">AI Lead Reactivation</a>
+                        <a href="index.html#services">AI Cold Calling</a>
+                        <a href="index.html#services">AI Receptionist</a>
+                        <a href="index.html#services">AI Appointment Setters</a>
+                        <a href="index.html#services">AI Sales System</a>
+                        <a href="index.html#services">Ads + AI Appointment Setter</a>
+                    </div>
+                </div>
+                <a href="index.html#pricing">Pricing</a>
+                <a href="index.html#blog">Blog</a>
+                <a href="contact.html">Book a Call</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="contact.html" class="cta-btn primary">Get Started</a>
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact / Lead Form Section -->
+    <section class="contact-form-section" id="contact" style="position: relative; overflow: hidden; padding: 100px 24px;">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-glow"></div>
+        <div class="contact-container" style="position: relative; z-index: 1; max-width: 1300px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.2fr; gap: 50px; align-items: start;">
+            
+            <!-- Left Column: Form & Title -->
+            <div class="contact-left-col">
+                <div class="contact-content" style="margin-bottom: 30px;">
+                    <h2 style="font-size: 3rem; line-height: 1.1; margin-bottom: 16px; text-transform: uppercase;">START GENERATING <span class="text-blue">LEADS</span></h2>
+                    <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 24px;">Fill out the form below, then schedule your strategy call directly on the right.</p>
+                </div>
+                
+                <div class="contact-form-box" style="background-color: var(--bg-card); border: 1px solid var(--border-subtle); padding: 30px; border-radius: 12px; border-top: 4px solid var(--primary-blue);">
+                    <div class="form-tag" style="color: var(--primary-blue); font-size: 0.75rem; font-weight: 700; letter-spacing: 1px; margin-bottom: 24px; display: flex; align-items: center; gap: 8px;">
+                        <span class="dot" style="width: 6px; height: 6px; background-color: var(--primary-blue); border-radius: 50%;"></span>
+                        STEP 1: FILL OUT THE FORM
+                    </div>
+                    <form class="lead-form" style="display: flex; flex-direction: column; gap: 16px;">
+                        <div class="form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                            <div class="input-wrap">
+                                <label style="display: block; color: var(--text-muted); font-size: 0.85rem; margin-bottom: 6px;">Name *</label>
+                                <input type="text" required style="width: 100%; padding: 10px 14px; border-radius: 6px; border: 1px solid var(--border-subtle); background: transparent; color: var(--text-white);">
+                            </div>
+                            <div class="input-wrap">
+                                <label style="display: block; color: var(--text-muted); font-size: 0.85rem; margin-bottom: 6px;">Email *</label>
+                                <input type="email" required style="width: 100%; padding: 10px 14px; border-radius: 6px; border: 1px solid var(--border-subtle); background: transparent; color: var(--text-white);">
+                            </div>
+                        </div>
+                        <div class="input-wrap">
+                            <label style="display: block; color: var(--text-muted); font-size: 0.85rem; margin-bottom: 6px;">Phone *</label>
+                            <input type="tel" placeholder="07XXX XXXXXX" required style="width: 100%; padding: 10px 14px; border-radius: 6px; border: 1px solid var(--border-subtle); background: transparent; color: var(--text-white);">
+                        </div>
+                        <div class="input-wrap">
+                            <label style="display: block; color: var(--text-muted); font-size: 0.85rem; margin-bottom: 6px;">Business (optional)</label>
+                            <input type="text" style="width: 100%; padding: 10px 14px; border-radius: 6px; border: 1px solid var(--border-subtle); background: transparent; color: var(--text-white);">
+                        </div>
+                        <div class="input-wrap">
+                            <label style="display: block; color: var(--text-muted); font-size: 0.85rem; margin-bottom: 6px;">Industry</label>
+                            <select style="width: 100%; padding: 10px 14px; border-radius: 6px; border: 1px solid var(--border-subtle); background: var(--bg-card); color: var(--text-white); appearance: none;">
+                                <option>Select your industry</option>
+                                <option>Ready-Mix Concrete</option>
+                                <option>General Contractor</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="submit-btn" style="background-color: var(--primary-blue); color: #fff; padding: 12px; font-weight: 700; border-radius: 6px; border: none; cursor: pointer; transition: background-color 0.3s;">Submit Form ➔</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Right Column: Booking Widget Card -->
+            <div class="booking-card" style="background-color: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 12px; padding: 30px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); border-top: 4px solid var(--primary-blue); width: 100%;">
+                <div class="booking-steps" style="display: flex; align-items: center; gap: 12px; font-size: 0.9rem; color: var(--text-muted); border-bottom: 1px solid var(--border-subtle); padding-bottom: 16px; margin-bottom: 20px;">
+                    <span class="step-dot active" style="width: 8px; height: 8px; border-radius: 50%; background-color: var(--primary-blue); box-shadow: 0 0 8px var(--primary-blue);"></span> Fill out the form
+                    <span class="step-dot active" style="width: 8px; height: 8px; border-radius: 50%; background-color: var(--primary-blue); box-shadow: 0 0 8px var(--primary-blue);"></span> Book your event
+                </div>
+                <div class="booking-header" style="margin-bottom: 20px;">
+                    <h3 style="font-size: 1.6rem; margin-bottom: 6px; color: var(--text-white);">Advisory Call - HTH</h3>
+                    <p class="booking-subtitle" style="font-size: 1.05rem; color: var(--text-muted); margin-bottom: 12px;">Let's scale your business.</p>
+                    <p class="booking-email-notice" style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 0;">
+                        If no slots are available or no times suit, please email <a href="mailto:appointfunnels@gmail.com" style="color: var(--primary-blue); font-weight: 600; text-decoration: underline;">appointfunnels@gmail.com</a> to schedule a time that suits you.
+                    </p>
+                </div>
+                <!-- Embedded Cal.com Widget -->
+                <div class="cal-embed-container" style="border-radius: 8px; overflow: hidden; border: 1px solid var(--border-subtle); background: #ffffff;">
+                    <iframe src="https://cal.com/zia-consult-ai/appointfunnels" style="width: 100%; height: 500px; border: 0;" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <img src="images/Untitled%20design.png" alt="Appoint Funnels Logo">
+                    <span>Appoint Funnels</span>
+                </div>
+                <p class="footer-subtext">Automating the Ready-Mix industry, one yard at a time. 🏗️</p>
+                <div class="footer-socials" style="display: flex; gap: 16px; margin-top: 16px;">
+                    <a href="https://www.facebook.com/appointfunnelss" target="_blank" class="social-link" style="color: var(--text-muted); font-size: 1.2rem; transition: color 0.3s, transform 0.3s; display: inline-block;">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="https://www.instagram.com/appointfunnels/" target="_blank" class="social-link" style="color: var(--text-muted); font-size: 1.2rem; transition: color 0.3s, transform 0.3s; display: inline-block;">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col links-col">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#cases">Case Studies</a>
+                <a href="contact.html">Contact</a>
+                <a href="mailto:appointfunnels@gmail.com" style="color: var(--primary-blue); font-weight: 600;">appointfunnels@gmail.com</a>
+            </div>
+            <div class="footer-col copy-col">
+                <p>&copy; 2026 Appoint Funnels. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
